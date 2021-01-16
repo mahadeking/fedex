@@ -159,13 +159,19 @@
 }
 @media screen and (max-width: 414px){
     .send- button {
-        margin-left: 20%;
+        margin-left: 19%;
         font-size: 1.2rem;
+    }
+    .contact-container .span_1_of_2{
+        margin-left: 0rem;
     }
 }
 @media screen and (max-width: 375px){
     .send- button {
     margin-left: 17%;
     font-size: 1rem;
+    }
+    .contact-container .span_1_of_2{
+        margin-left: 0rem;
     }
 }
