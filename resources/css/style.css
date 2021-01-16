@@ -1,0 +1,613 @@
+/*==============================================
+
+
+Template Name: cuda
+Template URL: https://moshiur.dev/projects/cuda/#home
+Author URL: mdmahadeking@gmail.com
+description: An Awesome Porfolio 
+Support: mdmahadeking@gmail.com
+
+
+==================================================*/
+
+/*================================================
+C S S  I N D E X
+----------------
+1. Google  Fonts
+2. Common css
+3. Reusable css
+4. header section
+5. box section
+6. pricing section
+6. box-2
+7. services sectiom
+8. testimonial section
+9. choose section
+10. sub section
+11. clints section
+12.contact section
+13. Footer Section 
+
+=================================================*/
+/* 1. Google  Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* 2. COMMON CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+   color: #fff;
+   background-color: #000;
+   font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+    letter-spacing: .1rem;
+    font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+h1.h2,h3,h4,h5,h6{
+    font-family:  'Quicksand', sans-serif;
+    font-weight: 700;
+}
+h1{
+    font-size: 4rem;
+}
+h4{
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+   
+}
+
+.clear-fix::after{
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*===========
+3. Reusable css
+=============*/
+section{
+    padding: 7rem 0rem;
+}
+.row{
+   max-width: 116rem;
+   margin: auto;
+}
+
+h2{
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+.p-s{
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin: auto;
+    line-height: 3rem;
+    text-align: center;
+   
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li{
+    list-style: none;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+.btn:link,
+.btn:visited,
+.btn{    
+    margin: 3rem 0;
+    padding: 1.5rem 2.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+}
+.hide-this{
+    display: none;
+}
+/*=================
+======
+ 4. header section
+ =====
+ ==================*/
+ header{
+     width: 100%;
+     height: 100vh;
+     background: #288FEB;
+     position: relative;
+     overflow: hidden;
+ }
+ .logo{
+    height: 5rem;
+    width: 15rem;
+    margin-top: 2.5rem;
+    float: left;
+ }
+ /* MAIN NAV===*/
+ .nav-manu{
+     float: right;
+     margin-top: 3rem;
+ }
+ .nav-manu li {
+     margin-left: 1rem;
+     display: inline-block;
+ }
+ .nav-manu li a:link,
+ .nav-manu li a:visited{
+     color: #000000;
+     font-size: 1.7rem;
+     text-transform: uppercase;
+     padding: .5rem 1.5rem;
+     border-radius: .5rem;
+    
+ }
+ .nav-manu li :first-child{
+    margin-left: 0;
+ }
+
+ /*STICKY MENU ====*/
+ .sticky {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-color: #fff;
+     box-shadow:  0 .3rem .3rem rgba(6, 56, 196, 0.9);
+     z-index: 99999999;
+ }
+ .sticky .logo{
+    margin:1rem 0 ;     
+ }
+ .sticky .nav-manu{
+    margin:1rem 0;
+ }
+ .sticky .mobile-menu span {
+     margin-top: 0;
+ }
+ /*==moble menu==*/
+ .mobile-menu span{
+     font-size: 3rem;
+     float: right;
+     margin: 1rem  1.5rem;
+     display: none; 
+     color: #288FEB;  
+ }
+ .mobile-menu span:hover{
+     cursor: pointer;
+ }
+ .overlay {
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.842);
+     height: 100vh;
+     width: 0;
+     transition: .6s;
+     overflow-x: hidden;
+     z-index: 1;
+     margin-top: 0;
+     left: 0;
+ }
+ .closebtn{
+     font-size: 7rem;
+     right: 4rem;
+     position: absolute;
+ }
+ .mobile-container{
+    position: relative;
+    top: 15%;
+    text-align: center;
+ }
+ .mobile-container a {
+     font-size: 2.5rem ;
+     display: block;
+     margin: 2rem;
+     text-transform: uppercase;
+    letter-spacing: .3rem;
+ }
+
+ /*===HERO BOX ======*/
+ .hero-container{
+     width: 100%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     margin-top: 5rem;
+     }
+ .img-box{
+    float: right;
+    width: 50%;
+ }
+ 
+ .img-box img {
+     width: 100%;
+     margin-top: 2rem;
+     height: 100%;
+     
+ }
+.hero-container h1{
+    
+    font-size: 4.5rem;
+    font-weight: 600;  
+    margin-bottom: 2rem;
+    text-transform: capitalize;      
+}
+.hero-container p{
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+}
+.line-trough{
+    text-decoration: line-through;
+}
+
+ .work-btn{
+    background-color:#ebe5e3;
+    color: rgb(27, 26, 26);
+    border-radius: .5rem;
+    letter-spacing: .5rem;
+    font-size: 2rem;
+    font-weight: 600;
+ }
+ .work-btn:hover{
+     background-color: #F45E58;
+     color: #fff;
+     transition: .5s;
+ }
+ /*=================
+ 5. box  seciton
+ ==================*/
+ #box-container{
+     background: #FFFFFF;
+     width: 100%;
+     height: auto;
+     position: relative;
+     overflow: hidden;
+ }
+ .box-img{
+     margin: 2rem;
+ }
+.box{
+    background: #288FEB;
+    text-align: center;
+    padding: 5rem 0rem;
+    border-radius: 2rem;
+    margin-left: 4rem;  
+}
+/*==============
+6. pricing section
+================*/
+#price{
+    background: #FFFFFF;
+    color: #303030;
+}
+.price-item{
+    text-align: center;
+    background-color: #ededed;
+    border-radius: 2rem;
+    margin-top: 5rem;
+}
+.price-item .level {
+    padding-top: 2rem ;
+    font-size: 3rem;
+    letter-spacing: .1rem;
+}
+.price-item  p{
+
+    color: rgb(27, 27, 27);
+    font-size: 1.6rem;
+    padding-bottom: 3rem;
+}
+.price-item .dollar {
+font-size: 3rem;
+position: relative;
+top: -2rem;
+
+}
+.price-item .number{
+    font-size: 6rem;
+    font-weight: 400;
+}
+.price-btn{
+    background-color:#288FEB;
+    color: rgb(255, 254, 254);
+    border-radius: .5rem;
+    letter-spacing: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1.2rem 2rem !important;
+ }
+ .price-btn:hover{
+     background-color: #F45E58;
+     color: #fff;
+     transition: .5s;
+ }
+ .features{
+     color: rgb(110, 106, 106);
+     font-weight: 400;
+     margin-top: 2rem;
+ }
+ .features li{
+     margin-top: 1.5rem;
+ }
+ .price-item .info{
+     background-color: #288FEB;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+ }
+ .price-item .info .dollar,
+ .price-item .info .number ,
+ .price-item .info .level,
+ .price-item .info span {
+    color: #fff;
+ }
+/*============
+6. box-2
+=============*/
+#box-2 {
+    background: #288FEB;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.box-2-items h3{
+    font-size: 2.9rem;
+    font-weight: 700;
+}
+
+ #box-2 .box-btn{
+    text-align: center;
+    margin-top: -3rem;
+ }
+ #box-2 .box-btn a{
+     font-weight: 400;
+ }
+ /*=================
+ 7. services sectiom
+ =================*/
+ #services {
+     background: #fff;
+     color: #3C4859;    
+ }
+ .services-box{
+     margin-top: 5rem;
+     text-align: center;
+     
+ }
+ .services-box h3{
+     font-size: 2.5rem;
+     margin: 2rem 0;
+ }
+ .services-box p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: .1rem;
+    color: #525252;
+}
+/*=================
+8. testimonial section
+====================*/
+#testimonial {
+    background: #288FEB;  
+}
+.test-contain {
+    color: rgb(77, 77, 77);
+    margin-top: 5rem;
+}
+#testimonial .test-box { 
+    background: #fff;
+    border-radius: 2rem;
+    padding: 3rem;
+    margin: 1rem;
+}
+.test-icon ion-icon{
+    font-size: 3rem;
+    color: #F45E58;
+}
+.test-items h3{
+    font-size: 2.2rem;
+    font-weight:700;
+    text-transform: uppercase;
+    color: rgb(65, 65, 65);
+    margin: 1rem 2rem;
+}
+.test-items p{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.test-img{
+    margin-top: 3rem;
+}
+.test-img img{
+    float: left;
+    border-radius: 2rem;
+}
+.test-img h4 {
+    margin-left: 12rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding-top: 1.5rem;
+}
+.test-img p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-left: 12rem;
+}
+
+/*=================================
+9. choose section
+==================================*/
+#Choose{
+    background: #fff;
+    color:rgb(59, 59, 59) ;
+   
+}
+.choose-row{
+    max-width: 96rem;
+    margin: auto;
+}
+.choose-text{
+    margin-bottom: 5rem;
+}
+.choose-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+.choose-items h3{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+}
+.choose-items p{
+    font-size: 1.6rem;
+    color: rgb(90, 90, 90);
+    margin-top: 1rem;
+}
+.choose-items,
+.choose-img{
+    margin-bottom: 1rem ;
+}
+.choose-items .p-fix{
+ font-size: 2rem;
+ text-transform: uppercase;
+ text-align: right;
+ margin-right: 1rem;
+}
+/*=========================
+10. sub section 
+==========================*/
+#sub{
+    background: #288FEB;
+    text-align: center;
+}
+.send- input{
+    width: 50%;
+    margin-top: 3rem;
+    padding: 2.2rem 2rem;
+    border-radius: .5rem;
+    box-shadow: none;
+    border: none;
+    font-size: 1.6rem;
+}
+::placeholder{
+    font-size: 1.8rem;
+}
+.send- button{
+    border: none;
+    display: block;
+    margin-left: 36%;
+    margin-top: 3rem;  
+}
+/*================
+11. clints section
+==================*/
+#clint{
+    background-color: #fff;
+    width: 100%;
+    padding-bottom: 0rem;
+}
+
+.clint-box img{
+    margin: 0rem 2rem;
+    width: 100%;
+}
+/*====================
+12.contact section
+=====================*/
+#contact{
+    background-color: #fff;
+    color: rgb(49, 49, 49);
+}
+#contact p{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(90, 90, 90);
+}
+.contact-container .span_1_of_2{
+    background: #F5F5F5;
+    margin-top: 5rem;
+    padding: 2.5rem;
+    margin-left: 3rem;
+    border-radius: 1.5rem;
+
+}
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea{
+    border-bottom: .1rem solid rgba(155, 154, 154, 0.337);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    padding: 1.8rem ;
+    border-radius: .5rem;
+    color: #000000;
+    font-size: 1.8rem;
+    background: #ebe5e300;
+}
+#contact form button{
+    border: none;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    
+}
+.c-info h4{
+    font-weight: bolder;
+}
+.c-info li{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: rgb(110, 106, 106);
+}
+.social-list{
+    margin-top: 4rem;
+    padding-bottom: 1.7rem;
+}
+.social-list ul li{
+    display: inline;
+    background-color: rgb(5, 181, 250);
+    padding-top: 1.4rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+    margin: 0rem 2rem;
+    border-radius: .7rem;     
+}
+.social-list ul li a{
+    font-size: 2rem;   
+}
+.social-list ul li:hover{
+    cursor: pointer;
+    background-color: #F45E58;
+    transition: .5s;
+}
+/*====================
+13. Footer Section 
+=====================*/
+#footer{
+    background-color:#ccc;
+    color: rgb(70, 70, 70);
+   padding: 3rem 0;
+}
+.copy-r8 a{
+    color: rgb(47, 176, 180);
+}
+
+

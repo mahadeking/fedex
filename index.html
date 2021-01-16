@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--META TAG REQ-->
+    <meta charset="UTF-8">
+    <title>FedEx-By-mahade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="awesome portfolio">
+     <!--FAVICON place-->
+    <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">    
+     <!--LINE ICONS -->   
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <!--vendors -CSS FILES-->
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="vendors/css/animated.css">
+    <!-- resources CSS FILES-->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+    
+</head>
+<body>
+    
+    <!--START HEADER SECTION-->
+    <header id="home">
+        <nav>
+            <div class="row">
+                <a href="#home">
+                    <img src="resources/img/logo.png" alt="logo" class="logo">
+                </a>
+                <ul class="nav-manu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#price">price</a></li>
+                    <li><a href="#services">services</a></li>                   
+                    <li><a href="#testimonial">testmonial</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <span onclick="openNav()">&#9776;</span>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void" onclick="closeNav()" class="closebtn">&times;</a>
+                        <div class="mobile-container">
+                            <a onclick="closeNav()" href="#home" class="ahover">Home</a>
+                            <a onclick="closeNav()" href="#price">price</a> 
+                            <a onclick="closeNav()" href="#services">services</a>                                                                                         
+                            <a onclick="closeNav()" href="#testimonial">testmonial</a>   
+                            <a onclick="closeNav()" href="#contact">contact</a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-container">
+            <div class="row">              
+                     <div class="col span_1_of_2 img-box">
+                         <img src="resources/img/2.png" alt="photo">
+                    </div>
+                    <div class="col span_1_of_2 text-box">
+                        <h1>The Best Web Hosting</h1>
+                         <p>Starting at <span class="line-trough"> $10</span> <strong>$3.99/month</strong></p>
+                        <ul>
+                             <li>Free Site Builders</li>
+                            <li>1 click install</li>
+                             <li>24/7 Support</li>                     
+                        </ul>
+                        <a class="btn work-btn" href="#">Get Started now</a>
+                    </div>                            
+            </div>
+        </div>
+    </header>
+    <!--END HEADER SECTION-->
+    <!--Start box SECTION-->
+    <section id="box-container" class="clear-fix">
+        <div class="row">
+           <div class="box-img">
+            <div class="col span_1_of_3 box">
+                <h4 class="hide-this">hide</h4>
+               <img src="resources/img/cursor.png" alt="photo">
+            </div>
+            <div class="col span_1_of_3 box">
+                <img src="resources/img/rocket-launch.png" alt="photo">
+            </div>
+            <div class="col span_1_of_3 box">
+                <img src="resources/img/headphones.png" alt="photo">
+            </div>
+           </div>
+        </div>
+    </section>
+    <!--END box SECTION-->
+    <!--Start Price SECTION-->
+    <section id="price" class="clear-fix">
+        <div class="row">
+            <h2>Choose Your Plan</h2>
+            <p class="p-s">Choose our very cheap and best quality hosting services package and run your business like a boss.</p>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_3">
+                <div class="price-item">
+                    <div class="">
+                        <p class="level">Personal</p>
+                        <p class="price">
+                            <span class="dollar">$</span>
+                            <span class="number">20</span>
+                            <span>/ mon</span>
+                        </p>
+                    </div>
+                      <div class="features">
+                        <ul>
+                            <li>15 Users</li>
+                            <li class="even">10 Projects</li>
+                            <li>30 GB of Storage</li>
+                            <li class="even">5 Workspaces</li>
+                            <li>Private Forums</li>
+                            <li class="even">Enhanced Security</li>
+                        </ul>
+                      </div>
+                   <a class="btn price-btn" href="#">Start Trial</a>
+                </div>
+            </div>
+            <!--2-->
+            <div class="col span_1_of_3">
+                <div class="price-item">
+                    <div class="info">
+                        <p class="level">Enterprise</p>
+                        <p class="price">
+                            <span class="dollar">$</span>
+                            <span class="number">45</span>
+                            <span>/ mon</span>
+                        </p>
+                    </div>
+                      <div class="features">
+                        <ul>
+                            <li>20 Users</li>
+                            <li class="even">50 Projects</li>
+                            <li>100 GB of Storage</li>
+                            <li class="even">5 Workspaces</li>
+                            <li>Private Forums</li>
+                            <li class="even">Enhanced Security</li>
+                        </ul>
+                      </div>
+                   <a class="btn price-btn" href="#">Start Trial</a>
+                </div>
+            </div>
+            <!--3-->
+            <div class="col span_1_of_3">
+                <div class="price-item">
+                    <div class="">
+                        <p class="level">Business</p>
+                        <p class="price">
+                            <span class="dollar">$</span>
+                            <span class="number">90</span>
+                            <span>/ mon</span>
+                        </p>
+                    </div>
+                      <div class="features">
+                        <ul>
+                            <li>25 Users</li>
+                            <li class="even">100 Projects</li>
+                            <li>500 GB of Storage</li>
+                            <li class="even">5 Workspaces</li>
+                            <li>Private Forums</li>
+                            <li class="even">Enhanced Security</li>
+                        </ul>
+                      </div>
+                   <a class="btn price-btn" href="#">Start Trial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END price SECTION-->
+    <!-- start box-2 SECTION-->
+    <section id="box-2" class="clear-fix"> 
+           <div class="box-2-items">
+                <div class="row">
+                    <div class="col span_2_of_3">
+                        <h3>Lanhost is the perfect choise for your next website</h3>
+                    </div>
+                    <div class="col span_1_of_3 box-btn">
+                        <a href="#" class="btn work-btn">get it now</a>
+                    </div>
+                </div>
+           </div>    
+    </section>
+
+    <!--END box-2 SECTION-->
+    <!-- start service SECTION-->
+    <section id="services" class="clear-fix">
+        <div class="row">
+            <div class="services-text">
+                <h2>Our Services</h2>
+                <p class="p-s">Choose our very cheap and best quality hosting services package and run your business like a boss.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="services-items">
+                <div class="col span_1_of_3">
+                    <div class="services-box">
+                        <img src="resources/img/web-hosting.png" alt="photo">
+                        <h3>Website Hosting</h3>
+                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give account.</p>
+                    </div>
+                </div>
+                <div class="col span_1_of_3">
+                    <div class="services-box">
+                        <img src="resources/img/server.png" alt="photo">
+                        <h3>Website Hosting</h3>
+                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give account.</p>
+                    </div>
+                </div>
+                <div class="col span_1_of_3">
+                    <div class="services-box">
+                        <img src="resources/img/cloud-hosting.png" alt="photo">
+                        <h3>Website Hosting</h3>
+                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give account.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="services-items">
+                <div class="col span_1_of_3">
+                    <div class="services-box">
+                        <img src="resources/img/cloud-computing.png" alt="photo">
+                        <h3>Website Hosting</h3>
+                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give account.</p>
+                    </div>
+                </div>
+                <div class="col span_1_of_3">
+                    <div class="services-box">
+                        <img src="resources/img/shopping-cart.png" alt="photo">
+                        <h3>Website Hosting</h3>
+                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give account.</p>
+                    </div>
+                </div>
+                <div class="col span_1_of_3">
+                    <div class="services-box">
+                        <img src="resources/img/idea.png" alt="photo">
+                        <h3>Website Hosting</h3>
+                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give account.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END services  SECTION-->
+    <!--Start testimonial   SECTION-->
+    <section id="testimonial" class="clear-fix">
+        <div class="row">
+            <div class="test-text">
+                <h2>Testimonials</h2>
+                <p class="p-s">Choose our very cheap and best quality hosting services package and run your business like a boss.</p>
+            </div>
+        </div>
+        <div class="row">
+           <div class="test-contain">
+                <div class="col span_1_of_2 test-box">
+                    <div class="test-fix">
+                        <div class="test-icon">
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <div class="test-items">
+                            <h3>Awesome Loading Speed</h3>
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>                       
+                        </div>
+                        <div class="test-img">
+                            <img src="resources/img/1.jpg" alt="photo">
+                            <h4>Mr. John Timber</h4>
+                            <p>Founder of Coderspoint</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span_1_of_2 test-box">
+                    <div class="test-fix">
+                        <div class="test-icon">
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <div class="test-items">
+                            <h3>Awesome Loading Speed</h3>
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>                       
+                        </div>
+                        <div class="test-img">
+                            <img src="resources/img/1.jpg" alt="photo">
+                            <h4>Mr. John Timber</h4>
+                            <p>Founder of Coderspoint</p>
+                        </div>
+                    </div>
+                </div>
+           </div>          
+        </div>
+    </section>
+    <!--END testimonial   SECTION-->
+    <!-- start Choose  SECTION-->
+    <section id="Choose" class="clear-fix">
+        <div class="choose-container">
+            <div class="row">
+                <div class="choose-text">
+                    <h2>Why Choose Us?</h2>
+                    <p class="p-s">
+                     Choose our very cheap and best quality hosting services package and run your business like a boss.
+                    </p>
+                </div>
+            </div>
+            <div class="choose-row">
+                <div class="col span_1_of_3 choose-img">
+                    <img src="resources/img/choose.jpg" alt="photo">
+                </div>
+                <div class="col span_2_of_3 choose-items">
+                    <h3>cPanel Included</h3>
+                    <p>Signs beast together said earth our fowl signs. Fowl it made years gather. Above may fruitful him. Them day brought place and saw Third. Every from together days life also dream. Signs beast together said earth our fowl signs. Fowl made years gather. Above may him. Them day brought place and saw Third. Every from together days life also dream has come true finally.</p>
+                </div>
+            </div>
+            <div class="clear-fix"></div>
+            <div class="choose-row">
+                <div class="col span_2_of_3 choose-items">
+                    <h6 class="p-fix">Highly Secured</h6>
+                    <p>Signs beast together said earth our fowl signs. Fowl it made years gather. Above may fruitful him. Them day brought place and saw Third. Every from together days life also dream. Signs beast together said earth our fowl signs. Fowl made years gather. Above may him. Them day brought place and saw Third. Every from together days life also dream has come true finally.</p>
+                </div>
+                <div class="col span_1_of_3 choose-img">
+                    <img src="resources/img/left.jpg" alt="photo">
+                </div>
+            </div>
+            <div class="clear-fix"></div>
+            <div class="choose-row">
+                <div class="col span_1_of_3 choose-img">
+                    <img src="resources/img/pexels-photo-244551.jpg" alt="photo">
+                </div>
+                <div class="col span_2_of_3 choose-items">
+                    <h3>Super Fast Speed</h3>
+                    <p>Signs beast together said earth our fowl signs. Fowl it made years gather. Above may fruitful him. Them day brought place and saw Third. Every from together days life also dream. Signs beast together said earth our fowl signs. Fowl made years gather. Above may him. Them day brought place and saw Third. Every from together days life also dream has come true finally.</p>
+                </div>
+            </div>
+        </div>           
+    </section>
+    <!--END Choose  SECTION-->
+    <!--Start sub  SECTION-->
+    <section id="sub" class="clear-fix">
+        <div class="row">
+            <div class="sub-text">
+                <h2>Stay up to date</h2>
+                <p class="p-s">Subscribe to our Newsletter. We'll send email notifications everytime we release new Theme.</p>
+            </div>
+            <div class="send-">
+               <form method="POST">
+                <input type="email" placeholder="Enter Your Email Address" required> 
+                <button class="btn work-btn" type="submit"> <ion-icon name="play-outline"></ion-icon> Subscribe now</button>
+               </form>           
+            </div>
+        </div>
+    </section>
+    <!--END sub  SECTION-->
+    <!--END clints  SECTION-->
+    <section id="clint" class="clear-fix">
+        <div class="row">
+            <div class="clint-box">
+              <div class="col span_1_of_4">
+                <h4 class="hide-this">hide</h4>
+                  <img src="resources/img/3.png" alt="photo">
+              </div>
+              <div class="col span_1_of_4">
+                <img src="resources/img/4.png" alt="photo">
+            </div>
+            <div class="col span_1_of_4">
+                <img src="resources/img/6.png" alt="photo">
+            </div>
+            <div class="col span_1_of_4">
+                <img src="resources/img/7.png" alt="photo">
+            </div>
+            </div>
+        </div>
+    </section>
+    <!--END clints  SECTION-->
+    <!--Start Contact  SECTION-->
+    <section id="contact" class="clear-fix">
+        <div class="row">
+            <div class="contact-text">
+                <h2>Contact Us</h2>
+                <p>Choose our very cheap and best quality hosting services package and run your business like a boss.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="contact-container">
+                <div class="col span_1_of_2">
+                    <div class="c-pro">
+                        <form method="POST">
+
+                            <input type="text" placeholder="Name*" required>                            
+                            <input type="email" placeholder="Email*">                            
+                            <textarea name="message" id="message" cols="10" rows="4" placeholder="Message*" required></textarea>                          
+                            <button class="price-btn" type="submit">send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col span_1_of_2">
+                    <div class="c-info">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li>1502 N Elm St, Fairmont, MN, 56031
+                                United States
+                             </li>
+                             <li>+8801957105720</li>
+                             <li>mdmahadeking@gmail.com</li>
+                             <li>www.yourdomain.com</li>
+                        </ul>
+                        <div class="social-list">
+                           <ul>
+                               <li> <a href="https://www.facebook.com/Mahde.Hasan.King/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                               <li> <a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                               <li> <a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
+                               <li> <a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <!--END contact  SECTION-->
+    <!--start footer  SECTION-->
+    <footer id="footer" class="clear-fix">
+        <div class="copy-r8">
+            <p class="p-s">
+                © 2021 Copyright <a href="https://www.facebook.com/Mahde.Hasan.King/">Mahade</a> 
+            </p>
+        </div>
+    </footer>
+    <!--END= footer SECTION-->
+
+
+
+
+ 
+
+
+    <script src="vendors/js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="vendors/js/modernizr-3.11.2.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="vendors/js/animated-js.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="resources/js/custom.js"></script>
+</body>
+</html>
